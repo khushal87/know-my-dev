@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Quizzy</title>
+    <link rel="stylesheet" href="quizapp.css">
+</head>
+
+<body>
+    <!--Top section-->
+    <div class="intro py-3 bg-white text-center">
+        <div class="container">
+            <h2 class="text-success display-3 my-4">Quizzy</h2>
+        </div>
+    </div>
+    
+    <!--Results Section-->
+    <div class="result py-4 d-none bg-light text-center">
+        <div class="container lead">
+            <p>You are <span class="text-primary display-4 p-3">0%</span>correct.</p>
+        </div>
+    </div>
+    
+
+    <!--Quiz Section-->
+    <div class="quiz py-4 bg-success">
+        <div class="container">
+            <h2 class="my-5 text-white">Ready with the questions.</h2>
+            <form class="quiz-form text-light">
+                <div class="my-5">
+                    <p class="lead font-weight-normal">Which Language do I know the best way?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value='A' checked>
+                        <label class="form-check-label">
+                            C
+                        </label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value='B'>
+                        <label class="form-check-label">
+                            Python
+                        </label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value='C'>
+                        <label class="form-check-label">
+                            C++
+                        </label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value='D'>
+                        <label class="form-check-label">
+                            Javascript
+                        </label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">Do I know how to use github?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value='A'>
+                        <label class="form-check-label">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value='B' checked>
+                        <label class="form-check-label">
+                            No
+                        </label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">Have I Contibuted to Open Sourcing?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value='A'>
+                        <label class="form-check-label">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value='B' checked>
+                        <label class="form-check-label">
+                            No
+                        </label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">Which is my best skill as a developer?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value='A' checked>
+                        <label class="form-check-label">
+                            Android Developer
+                        </label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value='B'>
+                        <label class="form-check-label">
+                            Web Development
+                        </label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value='C'>
+                        <label class="form-check-label">
+                            AI and Machine Learning Enthusiast
+                        </label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value='D'>
+                        <label class="form-check-label">
+                            Competitive Programmer
+                        </label>
+                    </div>
+                    <div class="text-center">
+                        <input type="submit" class="btn btn-light" value="Submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="quizapp.js"></script>
+</body>
+
+</html>
