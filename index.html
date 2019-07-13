@@ -18,14 +18,17 @@
             <h2 class="text-success display-3 my-4">Quizzy</h2>
         </div>
     </div>
-    
+
     <!--Results Section-->
-    <div class="result py-4 d-none bg-light text-center">
-        <div class="container lead">
-            <p>You are <span class="text-primary display-4 p-3">0%</span>correct.</p>
+    <div class="popup-wrapper">
+        <div class="popup">
+            <div class="popup-close">x</div>
+            <div class="popup-content">
+                <p class="result">You are <span class="text-primary display-4 p-3">0%</span>correct.</p>
+            </div>
         </div>
     </div>
-    
+
 
     <!--Quiz Section-->
     <div class="quiz py-4 bg-success">
@@ -116,7 +119,7 @@
                         </label>
                     </div>
                     <div class="text-center">
-                        <input type="submit" class="btn btn-light" value="Submit">
+                        <button class="btn-secondary">Submit</button>
                     </div>
                 </div>
             </form>
