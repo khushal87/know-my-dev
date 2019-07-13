@@ -1,8 +1,9 @@
 const answers = ['D', 'A', 'A', 'B'];
 const form = document.querySelector('form');
 const result=document.querySelector('span');
-const content1=document.querySelector('.result');
 
+
+//form event handler
 form.addEventListener('submit', e => {
     e.preventDefault();
     var score = 0;
@@ -17,6 +18,9 @@ form.addEventListener('submit', e => {
     let ans = user_answers.length - ctr;
     scrollTo(0, 0);
     if (ans === 4) {
+        const content1=document.querySelector('#result');
+        const content2=document.querySelector('#result1');
+        content1.textContent='You are ';
         user_answers.forEach((answer, index) => {
             if (answer === answers[index]) {
                 score += 25;
@@ -32,8 +36,9 @@ form.addEventListener('submit', e => {
                 i++;
             }
         }, 10);
+        content2.textContent="Correct";
     } else {
-        result.setAttribute('class','text-danger display-4')
+        result.setAttribute('class','text-danger display-5')
         result.textContent=`${content}`;
     }
 });
