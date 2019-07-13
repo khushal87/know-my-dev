@@ -6,7 +6,7 @@ const content1=document.querySelector('.result');
 form.addEventListener('submit', e => {
     e.preventDefault();
     var score = 0;
-    var content="Please fill all the entries";
+    let content="Please Fill All The Entries";
     const user_answers = [form.q1.value, form.q2.value, form.q3.value, form.q4.value];
     let ctr = 0;
     for (let i = 0; i < user_answers.length; i++) {
@@ -16,7 +16,6 @@ form.addEventListener('submit', e => {
     }
     let ans = user_answers.length - ctr;
     scrollTo(0, 0);
-    console.log(ans);
     if (ans === 4) {
         user_answers.forEach((answer, index) => {
             if (answer === answers[index]) {
@@ -34,7 +33,7 @@ form.addEventListener('submit', e => {
             }
         }, 10);
     } else {
-        result.setAttribute('class','text-danger display-4 p-2')
+        result.setAttribute('class','text-danger display-4')
         result.textContent=`${content}`;
     }
 });
